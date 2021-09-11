@@ -1,7 +1,7 @@
 import React from "react";
-import { deletePost } from "../../actions/postAction";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+
 
 import EllipsisText from "react-ellipsis-text";
 const PostCard = ({ postItem }) => {
@@ -14,20 +14,10 @@ const PostCard = ({ postItem }) => {
           alt={postItem.title}
           className="card-img-top"
         />
-        <Link
-          to={`/updatePost/${postItem.id}`}
-          className="btn btn-danger btn-edit"
-        >
-          <span class="material-icons">edit</span>
-        </Link>
-        <button
-          className="btn btn-danger btn-delete"
-          onClick={() => dispatch(deletePost(postItem.id))}
-        >
-          <span class="material-icons">delete_outline</span>
-        </button>
+
         <div className="card-body">
           <h6 className="text-secondary">{postItem.title}</h6>
+
           <EllipsisText text={postItem.body} length={"100"} />
         </div>
         <div className="card-footer">

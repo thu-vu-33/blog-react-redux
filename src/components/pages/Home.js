@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="container">
       <div className="py-4">
-        <Posts />
+        <Posts type={"home"}/>
       </div>
     </div>
   );

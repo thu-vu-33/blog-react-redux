@@ -9,7 +9,7 @@ import axios from "axios";
 // get a post
 export const getPost = (id) => async (dispatch) => {
   const result = await axios.get(
-    `https://jsonplaceholder.typicode.com/posts/${id}`
+    `http://localhost:4000/posts/${id}`
   );
   dispatch({
     type: GET_POST,
@@ -50,8 +50,8 @@ export const deletePost = (id) => async (dispatch) => {
   });
 };
 
-export const getPosts = () => async (dispatch) => {
-  const result = await axios.get("https://jsonplaceholder.typicode.com/posts");
+export const getPosts = (type) => async (dispatch) => {
+  const result = await axios.get("http://localhost:4000/posts?type="+type);
   dispatch({
     type: GET_POSTS,
     payload: result.data
