@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@bbc/react-transcript-editor": "^1.4.4",
     "@testing-library/jest-dom": "5.11.10",
     "@testing-library/react": "11.2.6",
     "@testing-library/user-event": "13.1.2",
@@ -25,7 +24,7 @@
     "redux-thunk": "2.3.0",
     "sass-loader": "^12.1.0",
     "shortid": "2.2.16",
-    "webvtt-player": "^0.0.16"
+    "webvtt-player": "https://github.com/thu-vu-33/webvtt-player.git"
   },
   "scripts": {
     "start": "react-scripts start",

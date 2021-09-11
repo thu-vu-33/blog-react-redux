@@ -6,16 +6,42 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: bisque;
-  }
-
-  .time {
-    display: none;
   }
 
   audio {
     width: 100%;
     height: 54px;
-    background-color: blue;
   }
+
+  .active {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+  }
+
+  .match {
+    background-color: lightyellow;
+  }
+
+  .line {
+    text-align: left;
+  }
+
+  .newline {
+    margin-bottom: 1em;
+    color: blue;
+  }
+
+  .text {
+    color: red;
+  }
+
+  .line p {
+    text-align: left;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
 }
